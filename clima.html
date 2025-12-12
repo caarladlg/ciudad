@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información climatológica de Madrid - Temperaturas y precipitaciones">
+    <title>Clima de Madrid - Descubre Madrid</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">M</span>
+                <span class="logo-text">Madrid</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" role="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Inicio</a></li>
+                    </li>
+                    <li class="nav-item"><a href="index.html#localización" class="nav-link">Localización</a></li>
+                    <li class="nav-item"><a href="index.html#visitas" class="nav-link">Visitas</a></li>
+                    <li class="nav-item"><a href="clima.html" class="nav-link active">Clima</a></li>
+                    <li class="nav-item"><a href="index.html#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero page-hero-clima">
+            <div class="hero-content">
+            </div>
+        </section>
+
+
+        <section class="section section-climate-info">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">El Clima de Madrid</h2>
+                </header>
+                <div class="climate-intro">
+                    <p>Madrid disfruta de un <strong>clima continental mediterráneo</strong>, caracterizado por inviernos fríos, veranos calurosos y precipitaciones moderadas concentradas en otoño y primavera.</p>
+                </div>
+                <div class="climate-cards">
+                    <article class="climate-card">
+                        <h3>Verano</h3>
+                        <p class="temp">30-40°C</p>
+                        <p>Caluroso y seco, ideal para disfrutar de las piscinas</p>
+                    </article>
+                    <article class="climate-card">
+                        <h3>Otoño</h3>
+                        <p class="temp">10-20°C</p>
+                        <p>Templado con lluvias ocasionales</p>
+                    </article>
+                    <article class="climate-card">
+                        <h3>Invierno</h3>
+                        <p class="temp">2-10°C</p>
+                        <p>Frío y seco, ocasionalmente con nieve</p>
+                    </article>
+                    <article class="climate-card">
+                        <h3>Primavera</h3>
+                        <p class="temp">12-22°C</p>
+                        <p>Agradable, perfecta para pasear</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section-charts">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Datos Climatológicos</h2>
+                </header>
+                <div class="charts-grid">
+                    <article class="chart-container">
+                        <h3>Temperaturas Medias (°C)</h3>
+                        <canvas id="temperatureChart"></canvas>
+                    </article>
+                    <article class="chart-container">
+                        <h3>Precipitaciones (mm)</h3>
+                        <canvas id="precipitationChart"></canvas>
+                    </article>
+                </div>
+        </section>
+
+
+        <section class="section section-best-time">
+            <div class="container">
+                <div class="best-time-content">
+                    <div class="recommendation">
+                        <h3>Recomendación</h3>
+                        <p>La <strong>primavera</strong> y el <strong>otoño</strong> son las mejores épocas para visitar Madrid. Las temperaturas son agradables y hay menos aglomeraciones turísticas.</p>
+                    </div>
+                    <div class="tips-grid">
+                        <article class="tip-card">
+                            <h4>Qué llevar en verano</h4>
+                            <p>Ropa ligera, protector solar, sombrero y mucha agua. Las noches son frescas.</p>
+                        </article>
+                        <article class="tip-card">
+                            <h4>Qué llevar en invierno</h4>
+                            <p>Abrigo, bufanda y guantes. El viento frío de la sierra puede ser intenso.</p>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Listo para tu aventura?</h2>
+                    <p>Descubre los lugares más emblemáticos de Madrid</p>
+                    <a href="index.html#visitas" class="btn btn-primary">Ver Visitas</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Descubre Madrid</h3>
+                    <p>Tu guía turística para conocer la capital de España.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="index.html#visitas">Visitas</a></li>
+                        <li><a href="clima.html">Clima</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Fuentes</h3>
+                    <p>Datos climatológicos: <a href="https://www.aemet.es" target="_blank" rel="noopener">AEMET</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Descubre Madrid</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

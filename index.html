@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Madrid - Guía turística de la capital de España">
+    <title>Descubre Madrid - Turismo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">M</span>
+                <span class="logo-text">Madrid</span>
+            </a>
+            <button class="menu-toggle" aria-label="Abrir menú" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav" role="navigation">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item"><a href="#localizacion" class="nav-link">Localización</a></li>
+                    <li class="nav-item"><a href="#visitas" class="nav-link">Visitas</a></li>
+                    <li class="nav-item"><a href="clima.html" class="nav-link">Clima</a></li>
+                    <li class="nav-item"><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Descubre Madrid</h1>
+                <p class="hero-subtitle">La ciudad que nunca duerme</p>
+            </div>
+            <div class="hero-overlay"></div>
+        </section>
+
+
+        <section id="localizacion" class="section section-location">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Localización</h2>
+                </header>
+                <div class="location-grid">
+                    <article class="location-info">
+                        <p>Madrid, capital de España, se encuentra en el centro geográfico de la Península Ibérica, a <strong>667 metros</strong> sobre el nivel del mar. Es la capital más alta de la Unión Europea.</p>
+                        <ul class="location-facts">
+                            <li><span> Población: 3.3 millones de habitantes</li>
+                            <li><span> Superficie: 604.3 km²</li>
+                            <li><span> Clima: Continental mediterráneo</li>
+                        </ul>
+                    </article>
+                    <figure class="location-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d194347.38440033564!2d-3.8196207!3d40.4378698!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1699999999999" 
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy"
+                            title="Mapa de Madrid">
+                        </iframe>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <section id="visitas" class="section section-visits">
+            <div class="container">
+                <header class="section-header">
+                    <h2 class="section-title">Visitas Imprescindibles</h2>
+                </header>
+                <div class="visits-grid">
+                    <article class="visit-card" data-aos="fade-up">
+                        <figure class="visit-image">
+                            <img src="https://ik.imagekit.io/k7xdtotaj/g_museo_nacional_prado_-galeriacentral.jpg.webp" alt="Prado" loading="lazy">
+                        </figure>
+                        <div class="visit-content">
+                            <h3>Museo del Prado</h3>
+                            <p>Es la pinacoteca más importante de España, mundialmente famosa por albergar una colección inigualable de obras maestras de Velázquez, Goya y El Greco.</p>
+                            <span class="visit-tag">Arte</span>
+                        </div>
+                    </article>
+                    <article class="visit-card" data-aos="fade-up" data-aos-delay="100">
+                        <figure class="visit-image">
+                            <img src="https://ik.imagekit.io/k7xdtotaj/Palacio_Real_de_Madrid_Julio_2016_(cropped).jpg" alt="Palacio Real" loading="lazy">
+                        </figure>
+                        <div class="visit-content">
+                            <h3>Palacio Real</h3>
+                            <p>Se trata de la residencia oficial de la monarquía española y el palacio más grande de Europa Occidental, destacando por su imponente arquitectura barroca y sus lujosos salones de estado.</p>
+                            <span class="visit-tag">Monumento</span>
+                        </div>
+                    </article>
+                    <article class="visit-card" data-aos="fade-up" data-aos-delay="200">
+                        <figure class="visit-image">
+                            <img src="https://ik.imagekit.io/k7xdtotaj/Palacio-Retiro-e1495582977764-810x562-1.jpg" alt="Retiro" loading="lazy">
+                        </figure>
+                        <div class="visit-content">
+                            <h3>Parque del Retiro</h3>
+                            <p>125 hectáreas de jardines históricos en pleno centro de la ciudad. Es el principal pulmón verde del centro de Madrid, un jardín histórico que combina naturaleza y monumentos icónicos como el gran estanque y el Palacio de Cristal.</p>
+                            <span class="visit-tag">Naturaleza</span>
+                        </div>
+                    </article>
+                    <article class="visit-card" data-aos="fade-up" data-aos-delay="300">
+                        <figure class="visit-image">
+                            <img src="https://ik.imagekit.io/k7xdtotaj/MADRID_100206_UDCI_023.jpg" alt="Sol" loading="lazy">
+                        </figure>
+                        <div class="visit-content">
+                            <h3>Puerta del Sol</h3>
+                            <p>La Puerta del Sol es la plaza más céntrica y concurrida de Madrid, famosa por albergar el Kilómetro Cero de las carreteras radiales de España, el reloj de las campanadas de Año Nuevo y el popular símbolo del Oso y el Madroño.</p>
+                            <span class="visit-tag">Plaza</span>
+                        </div>
+                    </article>
+                    <article class="visit-card" data-aos="fade-up" data-aos-delay="400">
+                        <figure class="visit-image">
+                            <img src="https://ik.imagekit.io/k7xdtotaj/madrid_mobile.webp" alt="Gran Vía" loading="lazy">
+                        </figure>
+                        <div class="visit-content">
+                            <h3>Gran Vía</h3>
+                            <p>La Gran Vía es la arteria más famosa de la ciudad, conocida como el "Broadway madrileño" por su espectacular colección de arquitectura de principios del siglo XX, sus tiendas de moda, cines y teatros.</p>
+                            <span class="visit-tag">Calle</span>
+                        </div>
+                    </article>
+                    <article class="visit-card" data-aos="fade-up" data-aos-delay="500">
+                        <figure class="visit-image">
+                            <img src="https://ik.imagekit.io/k7xdtotaj/unnamed.jpg" alt="Plaza Mayor" loading="lazy">
+                        </figure>
+                        <div class="visit-content">
+                            <h3>Plaza Mayor</h3>
+                            <p>La Plaza Mayor de Madrid es un emblemático rectángulo simétrico, famoso por la uniformidad de sus 237 balcones, que históricamente sirvió como centro de la vida social, mercados y ceremonias de la capital.</p>
+                            <span class="visit-tag">Plaza</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section-gallery">
+            <div class="container">
+                <div class="gallery-grid">
+                    <figure class="gallery-item gallery-item-large">
+                        <img src="https://ik.imagekit.io/k7xdtotaj/1000_F_502292434_HgiYXnAgnAaWPK48OQlOTBvreQxDJoMj.jpg" alt="Vista aérea de Madrid" loading="lazy">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://ik.imagekit.io/k7xdtotaj/Puerta-de-Alcala%CC%81_Madrid.jpg.webp" alt="Puerta de Alcalá" loading="lazy">
+                    </figure>
+                    <figure class="gallery-item">
+                        <img src="https://ik.imagekit.io/k7xdtotaj/madrid-mercado-san-miguel-11.jpg" alt="Mercado de San Miguel" loading="lazy">
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section section-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>¿Listo para explorar Madrid?</h2>
+                    <p>Consulta el clima para planificar tu viaje</p>
+                    <a href="clima.html" class="btn btn-primary">Ver Climatología</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3>Descubre Madrid</h3>
+                    <p>Tu guía turística para conocer la capital de España.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Enlaces</h3>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="#visitas">Visitas</a></li>
+                        <li><a href="clima.html">Clima</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contacto</h3>
+                    <p>Email: info@descubremadrid.es</p>
+                    <p>Tel: +34 000 000 000</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Descubre Madrid</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
